@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Paaru.css";
-
+import audi from "../src/audio/audiopaaru.mp3";
+import ReactAudioPlayer from "react-audio-player";
 const Paaru = () => {
+  let [val, setVal] = useState(0);
+  let playfun = () => {
+    new Audio(audi).play();
+  };
+  useEffect(() => {
+    playfun();
+  }, [val]);
+
   return (
     <>
       <div className="heart">
@@ -10,15 +19,15 @@ const Paaru = () => {
       </div>
       <div>
         <p>
-          <img src="https://i.ibb.co/zXhy9c5/paru.jpg" alt="no image" />
+          <img
+            src="https://i.ibb.co/zXhy9c5/paru.jpg"
+            alt="no image"
+            onClick={() => setVal(1)}
+          />
         </p>
         <h1 className="font">my JAAN(PAARU)</h1>
-        <audio controls="" autoPlay="">
-          <source
-            src="./WhatsApp Audio 2022-11-24 at 6.24.50 PM.mp3.mpeg"
-            type="audio/mpeg"
-          />
-        </audio>
+        {/* <audio controls autoPlay={useref} src={audio}></audio> */}
+        {/* <ReactAudioPlayer src={audi} autoPlay={true} />; */}
       </div>
     </>
   );
