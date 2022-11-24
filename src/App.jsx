@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Paaru from "./Paaru";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <Paaru />
+    </div>
+  );
+};
 
-export default App
+export default App;

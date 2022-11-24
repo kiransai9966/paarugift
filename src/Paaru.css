@@ -1,0 +1,44 @@
+.font {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: normal;
+  font-size: 2em;
+  /* margin-top: -750px; */
+  /* margin-left: -18px; */
+}
+body {
+  text-align: center;
+}
+
+.heart {
+  font-size: 200px;
+  color: #e00;
+  animation: beat 0.25s infinite alternate;
+  transform-origin: center;
+}
+@keyframes beat {
+  to {
+    transform: scale(1.15);
+  }
+}
+
+* {
+  border: box 0;
+  margin: 0;
+  width: 100%;
+}
+img {
+  width: 30%;
+  height: 30%;
+  /* top: -200px;
+  position: relative;
+  left: -5px; */
+}
+@media screen and (max-width: 600px) {
+  .heart {
+    font-size: 100px;
+    color: #e00;
+    animation: beat 0.25s infinite alternate;
+    transform-origin: center;
+    margin-top: 200px;
+  }
+}
