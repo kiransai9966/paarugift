@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/paarugift/static/js/main.15f9ae02.js",
+    "main.css": "/paarugift/static/css/main.78aebcc9.css",
+    "main.js": "/paarugift/static/js/main.6fadcb45.js",
     "index.html": "/paarugift/index.html",
-    "main.15f9ae02.js.map": "/paarugift/static/js/main.15f9ae02.js.map"
+    "main.78aebcc9.css.map": "/paarugift/static/css/main.78aebcc9.css.map",
+    "main.6fadcb45.js.map": "/paarugift/static/js/main.6fadcb45.js.map"
   },
   "entrypoints": [
-    "static/js/main.15f9ae02.js"
+    "static/css/main.78aebcc9.css",
+    "static/js/main.6fadcb45.js"
   ]
 }
